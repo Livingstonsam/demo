@@ -1,0 +1,597 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "f5f5c7ca-f9ec-8d5d-446f-688834686a4f",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "lakehousemirrorDB",
+  "type": "lakehouse_tables",
+  "userDescription": null,
+  "metadata": null,
+  "elements": [
+    {
+      "id": "6457e643-6485-487b-9dec-04e6a31bf07c",
+      "is_selected": false,
+      "display_name": "Schemas",
+      "type": "schema_grouping",
+      "description": null,
+      "children": [
+        {
+          "id": "f46b05f0-6a40-4cf3-b2b7-f47b468f7832",
+          "is_selected": false,
+          "display_name": "dbo_1",
+          "type": "lakehouse_tables.schema",
+          "description": null,
+          "children": [
+            {
+              "id": "98864764-bd19-422a-b5c9-71802309c11d",
+              "is_selected": false,
+              "display_name": "Tables",
+              "type": "table_grouping",
+              "description": null,
+              "children": [
+                {
+                  "id": "a508798e-7b42-45af-94a8-91c3e1cf69c3",
+                  "is_selected": false,
+                  "display_name": "customers-100",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "eda05146-9d9e-4413-9805-6a824bec40ac",
+                      "is_selected": true,
+                      "display_name": "Index",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "smallint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "391bf6df-a32b-4982-a1b2-bd9ded5f88c4",
+                      "is_selected": true,
+                      "display_name": "Customer_Id",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c4f8c9f3-86f4-43ed-94d8-9437887efabc",
+                      "is_selected": true,
+                      "display_name": "First_Name",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "a90b3334-ed26-41fe-b399-39e7215e4060",
+                      "is_selected": true,
+                      "display_name": "Last_Name",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "53a0a5b3-6748-4244-bcb1-530715c85d37",
+                      "is_selected": true,
+                      "display_name": "Company",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "9adddb83-45c9-4913-a2c9-4af163e9379a",
+                      "is_selected": true,
+                      "display_name": "City",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b9efb44e-16bd-48d8-89cb-38d3c6ffbd65",
+                      "is_selected": true,
+                      "display_name": "Country",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2e6c7ac0-d856-4413-840e-ab0358b24b32",
+                      "is_selected": true,
+                      "display_name": "Phone_1",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "622727aa-932f-4cc7-99f1-eba05cb0d723",
+                      "is_selected": true,
+                      "display_name": "Phone_2",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d357bbbb-5f45-4f46-937c-a7ab4ed43919",
+                      "is_selected": true,
+                      "display_name": "Email",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "cf5380d9-d98d-4714-93c4-28d3584edfdd",
+                      "is_selected": true,
+                      "display_name": "Subscription_Date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f439f2eb-a570-4bd2-85c7-b8ac88b8eaaa",
+                      "is_selected": true,
+                      "display_name": "Website",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "bea049d3-5759-47cc-b48f-32e61f8fe4f2",
+                      "is_selected": true,
+                      "display_name": "MSSQL_System_Uniquifier_1845581613",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "25cf9f96-8fcd-4dfb-863a-ee23fab65b18",
+                  "is_selected": false,
+                  "display_name": "10000 Sales Records",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "65877018-acdf-498b-9689-cbc004b4d2ea",
+                      "is_selected": true,
+                      "display_name": "Region",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "3061610a-4956-41b7-8f70-dfddcc4f4d20",
+                      "is_selected": true,
+                      "display_name": "Country",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "538ffdf7-59ae-4944-bfe3-18d8e75a4d2e",
+                      "is_selected": true,
+                      "display_name": "Item_Type",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0cdb9be7-2999-483e-ab9d-0a1348aa71c2",
+                      "is_selected": true,
+                      "display_name": "Sales_Channel",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "91c729fb-05d1-48b4-a9e0-eed3ef50ba42",
+                      "is_selected": true,
+                      "display_name": "Order_Priority",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "aa7e5893-cfde-4f65-afab-a568c00126c6",
+                      "is_selected": true,
+                      "display_name": "Order_Date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "a1244356-350f-4090-9365-3466341c4068",
+                      "is_selected": true,
+                      "display_name": "Order_ID",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "1ca4ec61-8440-4b31-8f2a-3641664f0fcc",
+                      "is_selected": true,
+                      "display_name": "Ship_Date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b9a34037-20cb-4949-a31e-909098dfcc6a",
+                      "is_selected": true,
+                      "display_name": "Units_Sold",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "smallint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "30c61fc5-63d3-472f-a558-b161e599f3b2",
+                      "is_selected": true,
+                      "display_name": "Unit_Price",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "8e2f66db-f24f-4cfa-80d5-02f070b292e5",
+                      "is_selected": true,
+                      "display_name": "Unit_Cost",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4484a4d7-0a8a-4957-ae2b-6e92b21deefc",
+                      "is_selected": true,
+                      "display_name": "Total_Revenue",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c2870225-c484-45ba-ba3e-c601837004b6",
+                      "is_selected": true,
+                      "display_name": "Total_Cost",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "56df8a87-dc1f-476b-922b-516a86869e16",
+                      "is_selected": true,
+                      "display_name": "Total_Profit",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2878affa-86aa-40d6-aced-1b65a740ffb4",
+                      "is_selected": true,
+                      "display_name": "MSSQL_System_Uniquifier_18099105",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ad966cab-bdc1-4e20-8202-9c17f1bfeec6",
+          "is_selected": false,
+          "display_name": "dbo",
+          "type": "lakehouse_tables.schema",
+          "description": null,
+          "children": [
+            {
+              "id": "97e1b49c-6bdf-4109-b2cd-7d053ed0379d",
+              "is_selected": false,
+              "display_name": "Tables",
+              "type": "table_grouping",
+              "description": null,
+              "children": [
+                {
+                  "id": "0b247753-aa79-47c3-aa83-75e588328b8f",
+                  "is_selected": false,
+                  "display_name": "customers-100",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "cce578cd-d88f-4cea-abae-69bffb267f6f",
+                      "is_selected": true,
+                      "display_name": "Index",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "smallint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "bd011e1d-d07e-468d-98a9-09b751e4616d",
+                      "is_selected": true,
+                      "display_name": "Customer_Id",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "146215ee-222e-41ab-944a-4f8f576ddbcc",
+                      "is_selected": true,
+                      "display_name": "First_Name",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "74e041cb-6fa3-4ca4-9ec5-336054e04cab",
+                      "is_selected": true,
+                      "display_name": "Last_Name",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "3c3e108d-7fb2-4c11-9e3b-d7f69367a5ae",
+                      "is_selected": true,
+                      "display_name": "Company",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "9c365c3b-bd2c-454e-9095-e1dbc1f845b1",
+                      "is_selected": true,
+                      "display_name": "City",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "bc8f38b6-a597-4c15-bd67-d70fab35e3a2",
+                      "is_selected": true,
+                      "display_name": "Country",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b975cd41-81e4-4ac5-b46d-241f14c92a49",
+                      "is_selected": true,
+                      "display_name": "Phone_1",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6a497240-0b9d-4216-8579-f302fb99b735",
+                      "is_selected": true,
+                      "display_name": "Phone_2",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "418e8857-6dc7-45cb-8223-55b5e0f513a3",
+                      "is_selected": true,
+                      "display_name": "Email",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "881d2a8b-7f88-4f0c-b6f7-8ae24a2eded2",
+                      "is_selected": true,
+                      "display_name": "Subscription_Date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d3972b72-a161-4d60-a9bc-feeff441d87d",
+                      "is_selected": true,
+                      "display_name": "Website",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "91b6f5d7-cd29-4dd9-b38b-fb19b1138c6a",
+                      "is_selected": true,
+                      "display_name": "MSSQL_System_Uniquifier_1845581613",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "aeef1998-c75d-444d-acae-72a8218e582c",
+                  "is_selected": true,
+                  "display_name": "10000_Sales_Records",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "5372f2c6-4638-4481-900e-dcd8fae197bd",
+                      "is_selected": true,
+                      "display_name": "Region",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "a1cba71e-b3be-44f0-bbde-39e5344f7774",
+                      "is_selected": true,
+                      "display_name": "Country",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "dbe92eaa-2635-425b-a936-89a6c9bcd6f2",
+                      "is_selected": true,
+                      "display_name": "Item_Type",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c8873b2d-cfd3-4c8c-8414-b7d3be841889",
+                      "is_selected": true,
+                      "display_name": "Sales_Channel",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "db118f67-cc72-492f-a376-637861b2c917",
+                      "is_selected": true,
+                      "display_name": "Order_Priority",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "583d64e0-b02d-46c8-9ff8-a56b4178e8a4",
+                      "is_selected": true,
+                      "display_name": "Order_Date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "de243a4e-0a6a-4df6-9b98-760400ea114d",
+                      "is_selected": true,
+                      "display_name": "Order_ID",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b67c6cdf-054e-4ff7-8344-56d6b7076293",
+                      "is_selected": true,
+                      "display_name": "Ship_Date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "36d47c5c-17c8-400d-a994-eabe03412d5f",
+                      "is_selected": true,
+                      "display_name": "Units_Sold",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "smallint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "8511f3ee-53a8-41b6-a684-3bac46f669d5",
+                      "is_selected": true,
+                      "display_name": "Unit_Price",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "601f9121-db78-4de4-9a56-a98fbf982cd9",
+                      "is_selected": true,
+                      "display_name": "Unit_Cost",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "19f1fbec-cc62-4258-8933-2a31a3d3d8e3",
+                      "is_selected": true,
+                      "display_name": "Total_Revenue",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b3ba41b0-2dcf-4704-a1ca-af2c86e9204b",
+                      "is_selected": true,
+                      "display_name": "Total_Cost",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6fde1318-4aa0-475c-8c28-91f7d3362e6f",
+                      "is_selected": true,
+                      "display_name": "Total_Profit",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c64b1dfa-ba5d-459f-9b23-ff1c4831af53",
+                      "is_selected": true,
+                      "display_name": "MSSQL_System_Uniquifier_18099105",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

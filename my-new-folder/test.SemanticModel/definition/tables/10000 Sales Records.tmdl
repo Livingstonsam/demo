@@ -1,0 +1,167 @@
+table '10000 Sales Records'
+	lineageTag: 7bfb6a0f-b3b9-4e42-8991-bc117af1da3a
+	sourceLineageTag: [dbo].[10000 Sales Records]
+
+	column Region
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 28856dc5-2570-4dd1-a160-5291732c03a7
+		sourceLineageTag: Region
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4970545b-e5c5-46d2-aa1f-f4563cd29767
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Item_Type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dc4c8943-e4b3-43e2-b49b-0f531b73b22d
+		sourceLineageTag: Item_Type
+		summarizeBy: none
+		sourceColumn: Item_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales_Channel
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: aa948d91-74ab-4daa-9787-6b73a2585c4c
+		sourceLineageTag: Sales_Channel
+		summarizeBy: none
+		sourceColumn: Sales_Channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order_Priority
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4125f93e-bde6-4b47-b83b-70e07d56e8c6
+		sourceLineageTag: Order_Priority
+		summarizeBy: none
+		sourceColumn: Order_Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order_Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 955588b8-2cb7-41fb-8a45-dc3921c2fdef
+		sourceLineageTag: Order_Date
+		summarizeBy: none
+		sourceColumn: Order_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2e4cec13-bcfd-44bd-9a27-41ca4c40a99b
+		sourceLineageTag: Order_ID
+		summarizeBy: count
+		sourceColumn: Order_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ship_Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 23733ae7-b0c7-4f84-8e87-a40db5c61800
+		sourceLineageTag: Ship_Date
+		summarizeBy: none
+		sourceColumn: Ship_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Units_Sold
+		dataType: int64
+		formatString: 0
+		sourceProviderType: smallint
+		lineageTag: b12f8fcb-632b-4736-ab17-e308b14e0c5c
+		sourceLineageTag: Units_Sold
+		summarizeBy: sum
+		sourceColumn: Units_Sold
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unit_Price
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c48c7e08-ade0-43fe-875e-4b7addcbb901
+		sourceLineageTag: Unit_Price
+		summarizeBy: sum
+		sourceColumn: Unit_Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unit_Cost
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d5b49631-27f6-46ca-b439-6eb1708b424e
+		sourceLineageTag: Unit_Cost
+		summarizeBy: sum
+		sourceColumn: Unit_Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Revenue
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c19e8080-214e-40ec-b05b-0d7a6e4058e3
+		sourceLineageTag: Total_Revenue
+		summarizeBy: sum
+		sourceColumn: Total_Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Cost
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0ecc7339-25c6-467a-ab70-9c9e59db080b
+		sourceLineageTag: Total_Cost
+		summarizeBy: sum
+		sourceColumn: Total_Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Profit
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 16a3b2fb-f833-4fae-8d1c-bd1a4d6e5742
+		sourceLineageTag: Total_Profit
+		summarizeBy: sum
+		sourceColumn: Total_Profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition '10000 Sales Records' = entity
+		mode: directLake
+		source
+			entityName: 10000 Sales Records
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,155 @@
+table 'Sales 2'
+	lineageTag: ae2b042f-0c34-4435-a6f1-de0078a274a1
+
+	column Region
+		dataType: string
+		lineageTag: 122dfa6d-6b27-4904-b5a1-17c8e86ccb72
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 47acc3c7-1da9-47a7-81fe-080572ad0e24
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Item Type'
+		dataType: string
+		lineageTag: 770758bd-6440-48c2-862a-6ca5522d3b47
+		summarizeBy: none
+		sourceColumn: Item Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Channel'
+		dataType: string
+		lineageTag: b35d5cf0-e060-4dd2-bc9b-231b6ee76b6e
+		summarizeBy: none
+		sourceColumn: Sales Channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Priority'
+		dataType: string
+		lineageTag: 5fd484e3-a051-4742-817d-f7534e97e37f
+		summarizeBy: none
+		sourceColumn: Order Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 11c3655f-1ae8-4da1-b862-80ab60f08910
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		variation Variation
+			isDefault
+			relationship: 0ff67b66-b85f-4401-9dc6-3a49c3e8c297
+			defaultHierarchy: LocalDateTable_74fc239b-23a3-4544-abef-8d7a2f5d228e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Order ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 024f0b75-c126-4c10-a863-b6f96b1927ba
+		summarizeBy: count
+		sourceColumn: Order ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ship Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ca0735b4-0140-454b-b50f-c41bac6cd813
+		summarizeBy: none
+		sourceColumn: Ship Date
+
+		variation Variation
+			isDefault
+			relationship: 3f5b4ffd-230b-431c-b750-0890884c4bda
+			defaultHierarchy: LocalDateTable_f262038e-6437-47cb-9723-1339cf8542cc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Units Sold'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e332521-930b-4788-af33-13b8cc77afea
+		summarizeBy: sum
+		sourceColumn: Units Sold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Price'
+		dataType: double
+		lineageTag: c4b2eb66-107c-44be-8d46-3d56b67ea3b8
+		summarizeBy: sum
+		sourceColumn: Unit Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Unit Cost'
+		dataType: double
+		lineageTag: 7c0feb34-d098-4d09-acf2-20b913215508
+		summarizeBy: sum
+		sourceColumn: Unit Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Revenue'
+		dataType: double
+		lineageTag: e56b5fb2-d577-4d87-870f-82331f2ee5e4
+		summarizeBy: sum
+		sourceColumn: Total Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Cost'
+		dataType: double
+		lineageTag: 3283c1e3-7c4c-4b02-ae0e-6acb32d6cfb4
+		summarizeBy: sum
+		sourceColumn: Total Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Profit'
+		dataType: double
+		lineageTag: 5f47f4a0-24ce-4ff9-b961-68625855eb85
+		summarizeBy: sum
+		sourceColumn: Total Profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Sales 2' = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(Web.Contents("https://tdpresales-my.sharepoint.com/personal/livingston_tdpresales_onmicrosoft_com/Documents/Apps/Microsoft Power Query/Uploaded Files/Sales 2.csv"), [Delimiter = ",", Columns = 14, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Region", type text}, {"Country", type text}, {"Item Type", type text}, {"Sales Channel", type text}, {"Order Priority", type text}, {"Order Date", type date}, {"Order ID", Int64.Type}, {"Ship Date", type date}, {"Units Sold", Int64.Type}, {"Unit Price", type number}, {"Unit Cost", type number}, {"Total Revenue", type number}, {"Total Cost", type number}, {"Total Profit", type number}})
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

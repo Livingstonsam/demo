@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/publishInfo/1.0.0/schema.json",
+  "description": "This is an agent that answers questions about the sales performance, revenue, profitability, product and regional trends, and channel performance."
+}
